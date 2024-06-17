@@ -2,7 +2,7 @@
 int main()
 {
 
-int b[]={5,6,7,8,9};
+int b[]={5,6,7,8,9,10};
 
 int length =sizeof (b)/sizeof (b[0]);
 
