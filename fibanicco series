@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main()
+{
+    int n;
+    printf("enter no of elements:";
+    scanf("%D",&n);
+    int a=0,b=1,c;
+    for(c=0;c<=n;c++){
+        printf("%d",a);
+        c =a+b;
+        a =b;
+        b =c;
+     }
+     return 0;
+    
+}

@@ -1,0 +1,11 @@
+#include <stdio.h>
+int main ()
+{
+int a[6]={3,7,1,4,6,8};
+
+for (i=0 ; i<6 ; i++){
+    sum=sum+a[i];
+}
+printf("%d\n",sum);
+return 0;
+}
