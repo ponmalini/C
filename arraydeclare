@@ -1,0 +1,58 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+#define MAX 50;
+int a[50],x,i,val,n,p;
+void create();
+void display();
+void insert();
+void delete();
+void main(){
+    create();
+    display();
+    insert();
+    printf("after insertion");
+    display();
+    delete();
+    printf("after deletion");
+    display();
+}
+void create(){
+printf("enter the number of elements:");
+scanf("%d",n);
+printf("Enter the elements:");
+for(i=0;i<n;i++){
+    scanf("%d",&a[i]);
+}
+}
+void display(){
+    printf("The elements in array: \n");
+    for(i=0;i<n;i++){
+        printf("%d\n",a[i]);
+    }
+}
+ void insert()
+ {
+ printf("enter the position to insert");
+ scanf("%d",&p);
+ printf("enter the new value:");
+ scanf("%d",&val);
+ for(int i=n; i>p;i--){
+    a[i]=a[i-1];
+ }
+  n=n+1;
+  a[p-1]=val;
+ }
+ void delete()
+ {
+     printf("enter the position to delete :");
+     scanf("%d",&p);
+     for(i=p-1;i<n;i++)
+     {
+         a[i]=a[i+1];
+     }
+     n=n-1;
+ }
+    
+
+
+

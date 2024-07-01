@@ -8,8 +8,8 @@ int main()
  printf("Enter the second string:");
  scanf("%s",s2);
  strcat(s1,s2);
- {
+ 
  printf("after concatation:%s",s1);
- }
+ 
  return 0;
  }
